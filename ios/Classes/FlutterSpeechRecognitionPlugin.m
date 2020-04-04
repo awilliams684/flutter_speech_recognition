@@ -112,7 +112,7 @@
             if(!isFinal) {
                 self->speechTimer = [NSTimer scheduledTimerWithTimeInterval:2.0 repeats:FALSE block:^(NSTimer * _Nonnull timer) {
                     [self stop:nil];
-                    [self->channel invokeMethod:@"speech.onRecognitionComplete" arguments:[speechResult.bestTranscription formattedString]];
+                    //[self->channel invokeMethod:@"speech.onRecognitionComplete" arguments:[speechResult.bestTranscription formattedString]];
                 }];
             }
         }
