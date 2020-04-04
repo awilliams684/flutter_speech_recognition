@@ -116,7 +116,7 @@ public class FlutterSpeechRecognitionPlugin implements MethodCallHandler, Recogn
 
   @Override
   public void onRmsChanged(float rmsdB) {
-    Log.d(LOG_TAG, "onRmsChanged : " + rmsdB);
+    //Log.d(LOG_TAG, "onRmsChanged : " + rmsdB);
   }
 
   @Override
@@ -127,7 +127,7 @@ public class FlutterSpeechRecognitionPlugin implements MethodCallHandler, Recogn
   @Override
   public void onEndOfSpeech() {
     Log.d(LOG_TAG, "onEndOfSpeech");
-    speechChannel.invokeMethod("speech.onRecognitionComplete", transcription);
+    //speechChannel.invokeMethod("speech.onRecognitionComplete", transcription);
   }
 
   @Override
