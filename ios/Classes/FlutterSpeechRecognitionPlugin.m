@@ -103,7 +103,7 @@
         BOOL isFinal = FALSE;
         
         if(speechResult) {
-            [self->channel invokeMethod:@"speech.onSpeech" arguments:[speechResult.bestTranscription formattedString]];
+            //[self->channel invokeMethod:@"speech.onSpeech" arguments:[speechResult.bestTranscription formattedString]];
             isFinal = speechResult.isFinal;
             //NSLog(@"partial: %@", [speechResult.bestTranscription formattedString]);
             if(self->speechTimer) {
